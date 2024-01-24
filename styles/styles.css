@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Pokemon';
+    src: url('../fonts/Pokemon\ Solid.ttf') format('truetype');
+}
+
+:root{
+    --var01: 'Pokemon', sans-serif; /*Fonte*/
+    --var03: #2a358f; /*Azul */
+    --var04: #FFDE00; /*Amarelo */
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 180px;
+    background-image: linear-gradient(61deg, rgba(219,196,38,1) 0%, rgba(254,227,48,1) 50%);
+    text-align: center;
+}
+
+header h1{
+    font-family: var(--var01);
+    font-size: 3.5rem;
+    color: var(--var04);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--var03);
+    letter-spacing: 5px;
+    height: 135px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.295);
+    transition: .4s;
+}
+
+header h1:hover{
+    font-size: 3.6rem;
+}
+
+header p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.849);
+}
+
+nav{
+    background-image: linear-gradient(90deg, #2a358f, #20296d);
+    height: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.582);
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.555);
+    text-align: center;
+}
+
+main{
+    width: 100%;
+}
+
+.pokemon-container{
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-container img{
+    max-width: 325px;
+    margin-bottom: 1.1rem;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.26);
+    opacity: 0.9;
+}
+
+.pokemon-container img:hover{
+    max-width: 360px;
+    opacity: 1;
+}
+
+.pokemon-container a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    opacity: 0.9;
+}
+
+.pokemon-container a:hover{
+    opacity: 1;
+}
+
+#bulba-container img{
+    outline: 9px solid #2a513f;
+}
+
+#bulba-container a{
+    color: #2a513f;
+}
+
+#charm-container img{
+    outline: 9px solid #de5138
+}
+
+#charm-container a{
+    color: #de5138
+}
+
+#squir-container img{
+    outline: 9px solid #297383
+}
+#squir-container a{
+    color: #297383
+}
+
+footer{
+    background-image: linear-gradient(90deg, #2a358f, #20296d);
+    height: 65px;
+    color: #fff;
+    padding-top: 0.8rem;
+    text-align: center;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.555);
+}
+
+footer p{
+    padding: 0.1rem;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* Media queries
+For Mobile Devices – 320px — 480px
+iPads and Tablets – 481px — 768px
+Laptops and small screen – 769px — 1024px
+Large screens and Desktops – 1025px — 1200px
+TV and Extra Large Screens – 1201px and more */
+
+@media (max-width: 1280px){
+    .pokemon-container img{
+        max-width: 250px;
+    }
+    .pokemon-container img:hover{
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 1100px){
+    .pokemon-container{
+        height: 500px;
+    }
+    .pokemon-container img{
+        max-width: 200px;
+    }
+    .pokemon-container img:hover{
+        max-width: 230px;
+    }
+}
+
+@media (max-width: 920px){
+    .pokemon-container{
+        height: 1000px;
+        gap: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #charm-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .pokemon-container img{
+        max-width: 200px;
+    }
+    .pokemon-container img:hover{
+        max-width: 220pxpx;
+    }
+}
+
+@media (max-width: 700px){
+    header{
+        height: 150px;
+    }
+    header h1{
+        padding-top: 1rem;
+        font-size: 2.3rem;
+        height: 110px;
+    }
+    header h1:hover{
+        font-size: 2.4rem;
+    }
+    .pokemon-container{
+        height: 800px;
+    }
+    .pokemon-container img{
+        max-width: 150px;
+    }
+    .pokemon-container img:hover{
+        max-width: 170px;
+    }
+}
+
+@media (max-width: 500px){
+    header{
+        height: 140px;
+    }
+    header h1{
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        height: 100px;
+    }
+    header h1:hover{
+        font-size: 1.6rem;
+    }
+    nav{
+        height: 80px;
+        text-align: center;
+
+    }
+}
