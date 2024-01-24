@@ -69,7 +69,7 @@ main{
     height: 550px;
     display: flex;
     flex-direction: row;
-    gap: 8rem;
+    gap: 7rem;
     justify-content: center;
     align-items: center;
 }
