@@ -232,6 +232,20 @@ TV and Extra Large Screens – 1201px and more */
     nav{
         height: 80px;
         text-align: center;
-
     }
+    
+    #bulba-container img{
+        outline: 5px solid #2a513f;
+    }
+    #charm-container img{
+        outline: 5px solid #de5138;
+    }
+    #squir-container img{
+        outline: 5px solid #297383;
+    }
+
+    footer{
+        height: 85px;
+    }
+
 }
