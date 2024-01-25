@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
+header {
     text-align: center;
     width: 100%;
     height: 60px;
@@ -16,15 +16,15 @@ header{
     justify-content: center;
 }
 
-header img{ 
+header img {
     max-width: 28px;
 }
 
-main{
+main {
     max-width: 100%;
 }
 
-.info-container{
+.info-container {
     max-width: 900px;
     padding: 20px;
     max-height: 200px;
@@ -38,7 +38,7 @@ main{
     flex-direction: column;
 }
 
-.info-container img{
+.info-container img {
     width: 150px;
     height: 150px;
     margin-right: 30px;
@@ -46,37 +46,37 @@ main{
     border-radius: 10px;
 }
 
-.info-container p{
+.info-container p {
     margin-bottom: 10px;
     text-align: justify;
     font-size: 1.2rem;
 }
 
-.info-container ul{
+.info-container ul {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
-.info-container li{
+.info-container li {
     list-style: none;
     border-radius: 5px;
     text-align: center;
     color: #fff;
     padding: 5px;
-    
+
 }
 
-#grass{
+#grass {
     background-color: rgb(9, 114, 0);
 }
 
-#eletric{
+#eletric {
     background-color: rgb(255, 153, 0);
 }
 
-.evolution-container{
+.evolution-container {
     max-width: 875px;
     border: 5px solid #ccc;
     border-radius: 20px;
@@ -84,12 +84,12 @@ main{
     margin: 0px auto;
 }
 
-.evolution-container h2{
+.evolution-container h2 {
     text-align: center;
     font-size: 1.5rem;
 }
 
-.evolution-box{
+.evolution-box {
     display: flex;
     height: 250px;
     flex-direction: row;
@@ -98,16 +98,16 @@ main{
     gap: 1rem;
 }
 
-.evolution-box img{
+.evolution-box img {
     max-width: 200px;
 }
 
-.evolution-box span{
+.evolution-box span {
     font-weight: bold;
     font-size: 2rem;
 }
 
-#squir{
+#squir {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -115,14 +115,15 @@ main{
     font-size: 1.5rem;
 }
 
-#war{
+#war {
     display: flex;
     flex-direction: column;
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
 }
-#blas{
+
+#blas {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -135,7 +136,7 @@ footer {
     justify-content: center;
 }
 
-footer a{
+footer a {
     text-align: center;
     margin: 1.5rem;
     text-decoration: none;
@@ -146,97 +147,100 @@ footer a{
 }
 
 
-footer a:hover{
+footer a:hover {
     background-color: #93c8d0
 }
 
-@media (max-width: 750px){
-    .evolution-box img{
+@media (max-width: 750px) {
+    .evolution-box img {
         max-width: 125px;
-        
+
     }
 
-    .evolution-box p{
-       font-size: 1.2rem;
-        
+    .evolution-box p {
+        font-size: 1.2rem;
+
     }
 
-    .evolution-container{
+    .evolution-container {
         margin: 20px 10px;
     }
 
-    footer a{
+    footer a {
         margin-top: 10px;
     }
 }
 
-@media (max-width: 525px){
-#image{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
+@media (max-width: 525px) {
+    #image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 
-#image img{
-    margin: 0.2rem 0;
-}
-.info-container{
-    display: block;
-    }   
+    #image img {
+        margin: 0.2rem 0;
+    }
 
-.info-container ul{
+    .info-container {
+        display: block;
+    }
+
+    .info-container ul {
         margin-top: 10px;
         display: flex;
         justify-content: center;
-        
-}
 
-.info-container h2{
-    text-align: center;
-}
+    }
 
-.evolution-container{
-    width: 75%;
-    margin: 155px auto 10px;
-    padding-top: 20px;
-}
+    .info-container h2 {
+        text-align: center;
+    }
+
+    .evolution-container {
+        width: 75%;
+        margin: 155px auto 10px;
+        padding-top: 20px;
+    }
 
 
-.evolution-box{
-    display: flex;
-    flex-direction: column;
-    height: 450px;
-    gap: 0.2rem;
-}
-.evolution-box img{
-    max-width: 100px;
-    
-}
+    .evolution-box {
+        display: flex;
+        flex-direction: column;
+        height: 450px;
+        gap: 0.2rem;
+    }
 
-.evolution-box p{
-    font-size: 1rem;
-    
-}
+    .evolution-box img {
+        max-width: 100px;
 
-span{
-    display: none;
-}
+    }
 
-#squir::after{
-    content: "↓";
-    font-weight: bold;
-    font-size: 2rem;
-}
-#war::after{
-    content: "↓";
-    font-weight: bold;
-    font-size: 2rem;
-}
+    .evolution-box p {
+        font-size: 1rem;
 
-footer a{
-    margin: 0.5rem;
-    padding: 15px 25px;
+    }
 
-}
+    span {
+        display: none;
+    }
+
+    #squir::after {
+        content: "↓";
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    #war::after {
+        content: "↓";
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    footer a {
+        margin: 0.5rem;
+        padding: 15px 25px;
+
+    }
 
 }
